@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- link do CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- TITULO DA PAG -->
+    <title>Calculadora Simples</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="imagens/logomath.jpg" alt="Logo" id="header-logo">
+        <h1>Calculadora Simples</h1>
+    </header>
+    
+    <!-- Container para a calculadora -->
+    <div class="calculadora-container">
+        <!-- USUARIO COLOCA NUMERO -->
+        <input type="text" id="num1" placeholder="primeiro numero">
+        <input type="text" id="num2" placeholder="segundo numero">
+        
+        <!-- BOTAO PARA CALCULAR -->
+        <button onclick="calcular()" id="btclk">CALCULAR</button>
+        
+        <!-- SELECIONAR OPERACAO -->
+        <input type="radio" name="opera" value="soma" id="soma"><label for="soma">SOMA</label>
+        <input type="radio" name="opera" value="sub" id="sub"><label for="sub">SUBTRAÇÃO</label>
+        <input type="radio" name="opera" value="mult" id="mult"><label for="mult">MULTIPLICAÇÃO</label>
+        <input type="radio" name="opera" value="divi" id="divi"><label for="divi">DIVISÃO</label>
+        
+        <!-- RESULTADO -->
+        <h2>Resultado: <span id="cor"></span></h2>
+    </div>
+
+    <!-- LINK JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
